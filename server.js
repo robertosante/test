@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 	console.log(log);
 	fs.appendFile('server.log', log + '\n', (err) => {
 		if(err) {
-			console.log('unablr to append to server log');
+			console.log('unable to append to server log');
 		};
 	});
 
